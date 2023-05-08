@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pengenalan Komunitas ROBOTIIK</title>
+        <link rel="stylesheet" href="assets/styles/style.css">
+        <script src="assets/scripts/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="header-content">
+                    <div class="logo"></div>
+                    <div class="logo-text">
+                        <h2>ROBOTIIK</h2>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="#pengenalan">Pengenalan</a></li>
+                    <div class="dropdown">
+                        <li><button onclick="dropdownFunction1()" class="dropdown-button">Divisi</button></li>
+                        <div id="divisiDropdown" class="dropdown-content">
+                          <a href="#programming">Programming</a>
+                          <a href="#mechanincal">Mechanical</a>
+                          <a href="#electrical">Electrical</a>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <li><button onclick="dropdownFunction2()" class="dropdown-button">Project</button></li>
+                        <div id="projectDropdown" class="dropdown-content">
+                          <a href="#humanoid">Humanoid</a>
+                          <a href="#submarine">Submarine</a>
+                          <a href="#quadcopter">Quadcopter</a>
+                        </div>
+                      </div>                    
+                </ul>
+            </nav>
+            <div class="banner">
+                <h1>ROBOTIIK</h1>
+                <p>Komunitas Robotika Fakultas Ilmu Komputer</p>
+            </div>
+
+        </header>
+
+        <main>
+            <div id="content">
+                <article id="pengenalan" class="card">
+                    <h2>Apa Itu ROBOTIIK?</h2>
+                    <img src="assets/img/pengenalan.jpg" class="content-image"alt="Pengenalan">
+                    <p>
+                        ROBOTIIK adalah sebuah komunitas bagi para mahasiswa Fakultas Ilmu Komputer, Universitas Brawijaya untuk mengembangkan
+                        bakat dan minatnya dalam pengembangan dan riset mengenai dunia robotika. ROBOTIIK sendiri merupakan bagian dari laboratorium Sistem Komputer dan Robotika Fakultas Ilmu Komputer, Universitas Brawijaya yang didedikasikan untuk pengembangan kreatifitas di bidang robotika, penelitian, lomba dan mengenalkan robotika kepada masyarakat dengan mengembangkan ilmu pengetahuan dan teknologi.
+                    </p>
+                </article>
+
+                <article id="divisi" class="card">
+                    <h2>Divisi</h2>
+                    Terdapat 3 divisi dalam komunitas ROBOTIIK Fakultas Ilmu Komputer Universitas Brawijaya
+                    <h3 id="programming">Programming</h3>
+                    <p>
+                        Dalam pengembangan sebuah robot tentunya tidak lepas dari memprogram robot itu sendiri. Disinalah peran divisi programming, yaitu berfokus dalam bidang pemrograman baik itu dari segi pergerakan dan penglihatan robot itu sendiri agar robot dapat berfungsi dengan baik.
+                    </p>
+                    <p>Divisi programming dibagi menjadi 2</p>
+                    <section>
+                        <h4>Programming Motion</h4> 
+                        <img src="assets/img/motion.jpg" class="content-image" alt="Programming Motion">
+                        <p>
+                            Programming motion adalah pemrograman yang memberi instruksi untuk menyelesaikan beberapa tugas gerak dari sebuah robot. Tugasnya bisa sesederhana mengendalikan aktuator yang biasa berupa servo agar dapat bergerak sesuai dengan tujuan hingga mengatur keseimbangan robot agar dapat bergerak dengan baik.
+                        </p>
+                    </section>
+                    <section>
+                        <h4>Programming Vision</h4>
+                        <img src="assets/img/vision.png" class="content-image" alt="Programming Vision">
+                        <p>
+                            Programming vision lebih berfokkus pada bagian visual dari robot atau dengan kata lain bagian penglihatan sebuah robot. Hal ini sangatlah penting karena robot diharapkan mampu untuk mengenali sebuah objek dan menentukan tindakan apa yang perlu dilakukan oleh robot tersebut sesuai dengan tujuan dibuatnya sebuah robot.
+                        </p>
+                    </section>
+                    <section>
+                        <h3 id="mechanical">Mechanical</h3> 
+                        <img src="assets/img/mechanical.jpg" class="content-image" alt="Mechanical">
+                        <p>
+                            Mechanical merupakan divisi yang bertanggung jawab untuk semua keperluan komponen dan suku cadang yang diperlukan sebuah robot. Dengan kata lain, divisi mechanical dituntut untuk mampu mendesain dan merancang komponen yang dibutuhkan sebuah robot serta merakitnya menjadi sebuah robot utuh. Selain itu, divisi mechanical juga perlu untuk selalu memperhatikan kondisi robot dan melakukan pemeliharaan terhadapnya. 
+                        </p>
+                    </section>
+                    <section>
+                        <h3 id="electrical">Electrical</h3> 
+                        <img src="assets/img/electrical.jpg" class="content-image" alt="Electrical">
+                        <p>
+                            Electrical merupakan divisi yang bertanggung jawab untuk seluruh bagian yang berhubungan dengan bidang kelistrikan dan komponen elektronik yang ada pada sebuah robot. Dengan demikian, electrical bertugas untuk merancang Printed Circuit Board (PCB) yang digunakan untuk mengkoneksikan perangkat elektronika pada sebuah robot.
+                        </p>
+                    </section>
+                </article>
+                <article class="card">
+                    <h2>Project</h2>
+                    <p>ROBOTIIK Fakultas Ilmu Komputer Universitas Brawijaya memiliki fokus kepada 3 project besa</p>
+                    <section>
+                        <h3 id="humanoid">Humanoid</h3> 
+                        <img src="assets/img/humanoid.jpg" class="content-image" alt="Mechanical">
+                        <p>
+                            Robot humanoid merupakan tipe robot yang memiliki bentuk dan perilaku yang menyerupai manusia. ROBOTIIK sendiri mengembangkan robot humanoid untuk mengikuti beberapa perlombaan, salah satunya adalah cabang lomba dari Kontes Robot Indonesia (KRI), yaitu lomba Kontes Robot Sepak Bola Indonesia (KRSBI). Ini merupakan lomba yang mengusung penggunaan robot humanoid untuk dapat menendang bola dan memasukannya ke gawang lawan. Tentunya dengan robot yang sudah harus diprogram secara otomatis.
+                        </p>                        
+                    </section>
+                    <section>
+                        <h3 id="submarine">Submarine</h3> 
+                        <img src="assets/img/submarine.webp" class="content-image" alt="Mechanical">
+                        <p>
+                            Salah satu robot yang dikembangkan ROBOTIIK adalah robot submarine, ini merupakan salah satu jenis robot yang mampu beroperasi di dalam air selayaknya kapal selam sungguhan. Tim ROBOTIIK juga mengikuti lomba untuk jenis robot ini, salah satunya dalam lomba Kontes Kapal Cepat Tak Berawak (KKCTBN).
+                        </p>                        
+                    </section>
+                    <section>
+                        <h3 id="quadcopter">Quadcopter</h3> 
+                        <img src="assets/img/quadcopter.jpg" class="content-image" alt="Mechanical">
+                        <p>
+                            Quadcopter adalah jenis robot terbang yang termasuk ke dalam kategori Unmanned Aerial Vehicle (UAV) yang memiliki ciri khusus yang mudah dikenali yaitu memiliki empat buah baling-baling motor yang digunakan sebagai penggeraknya. Quadcopter juga akan diikutkan dalam perlombaan, salah satunya adalah Kontes Robot Terbang Indonesia.
+                        </p>                        
+                    </section>
+                </article>
+            </div>
+
+            <aside>
+                <article class="profile card">
+                    <header>
+                        <h2>Tentang saya</h2>
+                        <div class="profile-picture">
+                            <img src="assets/img/profile-picture.jpg" alt="profile picture"/>
+                        </div>
+                    </header>
+                    <section class="about_me">
+                        <h2>Samuel Djodi</h2>
+                        <p>
+                            Mahasiswa yang sedang menempuh program studi Teknik Komputer di Universitas Brawijaya yang juga merupakan anggota aktif ROBOTIIK Fakultas Ilmu Komputer di bagian Programming Vision Humanoid
+                        </p>
+                        <div class="contacts">
+                            <h2>Hubungi Saya</h2>
+                            <ul>
+                                <li><b>Email</b><br>samuelsdjodis@gmail.com</li>
+                                <li><b>Linkedin</b><br><a href="https://www.linkedin.com/in/samuel-djodi/ tar" target="_blank">Samuel Djodi</a></li>
+                                <li><b>No.Telp</b><br>+62 1234567890</a></li>
+                            </ul>
+                            <div class="contacts-footer">
+                                <p>Surabaya, Jawa Timur, 60293</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </aside>
+        </main>
+        <footer>
+            <p>Pengenalan Komunitas ROBOTIIK Filkom UB &#169; 2023, ROBOTIIK FILKOM UB</p>
+        </footer>
+    </body>
+</html>

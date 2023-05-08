@@ -1,0 +1,249 @@
+/* Import font dari google font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope',sans-serif;
+}
+
+header {
+    display: inline;
+}
+
+.banner {
+    height: 60vh;
+    padding: 120px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-image: radial-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/header.jpg);
+    background-size: cover;
+    background-position: 100%;
+    min-height: 100%;
+    text-align: center;  
+}
+
+nav {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    position: sticky;
+}
+
+nav ul {
+    padding-inline: 3rem;
+    gap: 2rem;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 25px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    color: black;
+    background-color: white
+}
+
+/* Styling untuk button "divisi" di navigation bar*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Button */
+.dropdown-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+}
+  
+/* Dropdown button on hover & focus */
+.dropdown-button:hover{
+background-color: white ;
+color: black;
+}
+
+/* Isi konten dari dropdown */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: white;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {
+text-decoration: underline;
+}
+
+.show {display:block;}
+
+.header-content {
+    padding: 10px;
+    display: flex;
+    padding-inline: 2rem;
+    gap: 2.5rem;
+}
+
+.logo{
+    margin-left: 5%;
+    padding: 5vh 5vh;
+    width: 50px;
+    height: 50px;
+    background: white url(../img/navbar_logo.png);
+    background-size: cover;
+    background-position-x: center;
+    border-radius: 50%;
+}
+
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+h2, h3, h4 {
+    color: #0074ba;
+}
+
+.logo-text h2 {
+    color: white;
+}
+
+#content {
+    font-size: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 5;
+    gap: 1rem 2rem;
+    text-align: center;
+}
+
+.content-image {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}   
+
+aside {
+    flex: 1;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+.card:hover {
+    background-image:linear-gradient(rgba(73, 222, 255, 0.3), rgb(255, 227, 227))
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+    border-radius: 999px;
+}
+
+.about_me {
+    text-align: center;
+}
+
+.contacts {
+    margin-top: 80px;
+    text-align: center;
+}
+.contacts ul {
+    padding: .5rem 1.5rem;
+    list-style-type: none;
+}
+
+.contacts ul li {
+    text-decoration: none;
+    padding: 20px;
+}
+
+footer {
+    height: 100px;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Penambahan media query untuk ukuran layar tertentu */
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+
+    main{
+        flex-flow: column;
+    }
+
+    #content .article{
+        display: flex;
+        flex-direction: column;
+    }
+}
