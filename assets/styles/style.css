@@ -84,6 +84,7 @@ nav ul li a:hover {
     cursor: pointer;
     padding: .5rem 1.5rem;
     border-radius: 999px;
+    border-style: none;
 }
   
 /* Dropdown button on hover & focus */
@@ -110,10 +111,14 @@ display: block;
 }
 
 .dropdown-content a:hover {
-text-decoration: underline;
+color: white;
+background-color: black ;
+opacity: 0.4;
 }
 
-.show {display:block;}
+.show {
+    display:block;
+}
 
 .header-content {
     padding: 10px;

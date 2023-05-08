@@ -1,10 +1,12 @@
 // Dropdown muncul ketika di klik
 function dropdownFunction1() {
     document.getElementById("divisiDropdown").classList.toggle("show");
+    document.getElementById("projectDropdown").classList.remove("show");
 }
 
 function dropdownFunction2() {
     document.getElementById("projectDropdown").classList.toggle("show");
+    document.getElementById("divisiDropdown").classList.remove("show");
 }
 
 // Menutup dropdown ketika klik diluar dropdown
