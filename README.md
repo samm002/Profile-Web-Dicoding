@@ -1,3 +1,3 @@
-# profile-web-dicoding
+# Web Profile Sederhana
 
 Dibuat untuk memenuhi submisi project akhir kelas Belajar Dasar Pemrograman Web Dicoding
